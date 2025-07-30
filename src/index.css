@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family:  var(--fuente-principal);
+
+  /* outline: 1px solid red;  */
+  /* overflow-y: hidden; */
+}
+
+
+:root{
+  /* color de fondo */
+  --variable-color-fondo: #161717;
+
+  /* color de texto */
+  --variable-color-texto: #fafafa;
+
+  /* estilo de fuente */
+  --fuente-principal: "Roboto", sans-serif;
+
+  /* span del contacto */
+  --variable-color-contact-span: #21c063;
+  
+  /* color de fondo de msj enviado del chat*/
+  --variable-color-mensaje-enviado: #144d37;
+
+  /* color de fondo de msj recibido del chat*/
+  --variable-color-mensaje-recibido: #242626;
+
+
+}

@@ -1,0 +1,79 @@
+/* Contact.css */
+
+.content__screen__list-contact{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid rgba(148, 124, 137, 0.212);
+    border-radius: 12px;
+    height: 80px;
+    
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+}
+
+/* El link es el contenedor flex principal para cada fila de contacto */
+.content__screen__list__link{
+    display: flex;  
+    flex-direction: row-reverse;   
+    justify-content: space-between;
+    
+    
+}
+
+/* Contenedor de la información textual (nombre y última conexión) */
+.contact-info-rigth{
+    display: flex;
+    padding: 0px 15px 0px 0px;
+
+}
+.contact-info-left{
+
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 13px;
+    /* justify-content: space-between; */
+    /* width: 200px; */
+    padding: 0px 0px 0px 13px;
+    
+}
+
+.contact-name-color{
+    color: var(--variable-color-texto);
+}
+
+.contact-name{
+    padding-top: 10px;
+    font-size: 16px;
+    
+
+}
+
+.contact-last-connection{
+    padding-top: 10px;
+
+    font-size: 12px;
+    color: #abacac;
+    
+   
+    /* overflow: hidden; */
+}
+
+/* Contenedor de la imagen del avatar */
+.content-img-contact{
+    width: 77px;
+    height: 72px;
+    border-radius: 50px; /* Hace el contenedor circular para la imagen */
+    overflow: hidden;
+
+    
+}
+
+.content-img-contact .contact-avatar{
+    width: 100%;
+    height: 100%;
+    
+    
+    /* border-radius: 50%; Asegura que la imagen sea redonda incluso si el contenedor no lo es perfectamente */
+}
