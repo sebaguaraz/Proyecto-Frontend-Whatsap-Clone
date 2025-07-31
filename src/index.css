@@ -8,8 +8,8 @@
   text-decoration: none;
   list-style: none;
   font-family:  var(--fuente-principal);
-
-  /* outline: 1px solid red;  */
+  color: var(--variable-color-texto);
+  outline: 1px solid red; 
   /* overflow-y: hidden; */
 }
 

@@ -11,7 +11,7 @@ const contacts = [
             id:1,
             name: 'Ana',
             descripcion: "Estudiante de programacion",      
-            avatar: "https://cms-images.acc.indazn.com/di/library/DAZN_News/be/79/joao-pedro-chelsea-mundial-de-clubes_93p8zsu0dta1ghvu6uwyf7q4.jpg?t=-864837905&quality=80&w=750&h=422",
+            avatar: '/images/lionel-messi.jpg',
             last_connection: "Ayer",
             connection_status: "offline",
             message: [{
@@ -36,7 +36,7 @@ const contacts = [
             id:2,
             name: 'Juan',
             descripcion: "Hace frio",      
-            avatar: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTFk4ooQMR9q7YMthnt8yl_erb48hWMnrVPxXlbVgPPwoGtont0EwBi15WdrDoDkwbHhlshJrJx8n-wFpbaeV_GSVXhUvGIui4qllkGuCQ",
+            avatar: '/images/ronaldo.jpg',
             last_connection: "hace 2 horas",
             connection_status: "online",
             message: [{

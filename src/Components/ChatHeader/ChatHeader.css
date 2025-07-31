@@ -1,0 +1,62 @@
+.content__chat__header {
+    display: flex;
+    flex-direction: row;
+    height: 100%; 
+    width: 100%;
+    align-items: center; 
+    padding: 0 15px; 
+    gap: 10px; 
+}
+
+/* FIX: Le damos un ancho fijo para que no se encoja. */
+.content__chat__header-img {
+    height: 40px;
+    width: 40px; 
+    border-radius: 50%; /* Cambié a 50% para que siempre sea circular */
+    overflow: hidden;
+}
+
+.contact-avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Esto asegura que la imagen cubra el contenedor sin distorsionarse */
+}
+
+.content__chat__header-name {
+    font-size: 16px;
+    width: auto; 
+    color: var(--variable-color-texto);
+    font-weight: bold;
+    flex: 1;
+}
+
+.content__chat__header-button {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto; 
+}
+
+.content__chat__header-search,
+.content__chat__header-setting {
+    height: 40px;
+    width: 40px;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    /* cursor: pointer; */
+}
+
+.content__chat__header-search i,
+.content__chat__header-setting i {
+    font-size: 20px;
+    display: flex;
+    position: absolute;
+    right: 10px;
+    color: var(--variable-color-texto); 
+}

@@ -73,6 +73,7 @@
 .content-img-contact .contact-avatar{
     width: 100%;
     height: 100%;
+    object-fit: cover; 
     
     
     /* border-radius: 50%; Asegura que la imagen sea redonda incluso si el contenedor no lo es perfectamente */
