@@ -1,6 +1,6 @@
 import React from "react";
 import Message from "../Message/Message";
-// import "../../index.css"
+import "./MessageList.css"
 
 
 
@@ -26,7 +26,7 @@ export const MessageList = (props) => {
             
             )
     return (
-        <div>
+        <div className="message-list" >
             {lista}
         </div>
     );

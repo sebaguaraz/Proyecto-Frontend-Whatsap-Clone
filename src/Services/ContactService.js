@@ -17,14 +17,14 @@ const contacts = [
             message: [{
                     id: 1,
                     emisor: 'Yo',
-                    receptor: 'Otro',
+                    receptor: 'El',
                     hora: new Date().toLocaleTimeString(),
                     texto: '¡Buen día! ¿Recibiste el reporte que envié ayer?',
                     status: 'visto'
                 },
                 {
                     id: 2,
-                    emisor: 'Otro',
+                    emisor: 'El',
                     receptor: 'Yo',
                     hora: new Date().toLocaleTimeString(),
                     texto: '¡Hola Laura! Sí, lo recibí. Lo estoy revisando ahora mismo. ¡Gracias!',
@@ -41,18 +41,18 @@ const contacts = [
             connection_status: "online",
             message: [{
                     id: 1,
-                    emisor: 'Laura',
-                    receptor: 'Carlos',
+                    emisor: 'El',
+                    receptor: 'Yo',
                     hora: new Date().toLocaleTimeString(),
                     texto: 'Hola ya estas en casa?',
                     status: 'visto'
                 },
                 {
                     id: 2,
-                    emisor: 'Carlos',
-                    receptor: 'Laura',
+                    emisor: 'Yo',
+                    receptor: 'El',
                     hora: new Date().toLocaleTimeString(),
-                    texto: '¡Hola Seba! Sí ¡Gracias!',
+                    texto: '¡Hola Juan, si llegue ya estoy en casa!',
                     status: 'visto'
                 }]
         }

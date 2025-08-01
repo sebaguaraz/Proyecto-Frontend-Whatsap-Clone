@@ -1,22 +1,75 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
 
 
-
-
-
-
-
-
-
-
-
-
-.buttom{
-background: transparent;
-border: none;
+/* Estilo base para todos los mensajes */
+.message__content {
+    margin: 12px 0PX;
+    font-size: 14px;
+    border-radius: 10px;
+    max-width: 80%;
+    width: 907px;
+    padding: 0px 57px 0px 62px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-i {
-    color: rgb(180, 171, 171);
+/* Estilos específicos para los mensajes enviados por el usuario actual */
+.message__content-mine {
+    background-color: #005c4b; /* Color verde de WhatsApp */
+    align-self: flex-end; 
+    display: flex;
+    position: relative; 
+    padding: 10px 7px 10px 9px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+/* Estilos específicos para los mensajes del receptor */
+.message__content-other {
+    background-color: #202c33; /* Color oscuro para los mensajes del otro */
+    align-self: flex-start; /* Alinea el mensaje a la izquierda */
+    display: flex;
+    position: relative; 
+    padding: 10px 7px 10px 9px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+
+.message-text{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.message-info{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 9px;
     margin-left: 10px;
+    margin-right: 10px;
+}
+
+.message-status img{
+    width: 16px;
+    height: 16px;
+}
+
+.message-buttom {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    color: white;
+}
+
+.message-buttom i {
+    font-size: 1.2em;
 }
