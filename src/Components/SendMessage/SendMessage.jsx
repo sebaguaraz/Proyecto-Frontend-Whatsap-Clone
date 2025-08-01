@@ -1,6 +1,6 @@
 import React from "react";;
 import './SendMessage.css'
-import "../../index.css"
+// import "../../index.css"
 import { useState } from "react";
 
 
@@ -28,7 +28,7 @@ export const SendMessage = ({handlesubmitSendMessageForm}) => {
                 <input className="content__send__message__form-input" type="text" name="message" id="message" placeholder="Escribe un mensaje" />
 
 
-              <button className="content__send__message__form-button" type="submit" onMouseOver={onMouseOver} onMouseOut={onMouseOut} style={{backgroundColor: changeColor}}> <i className="bi bi-send" style={{color: 'white'}}></i> </button>
+              <button className="content__send__message__form-button" type="submit" onMouseOver={onMouseOver} onMouseOut={onMouseOut} style={{backgroundColor: changeColor}}  aria-label="Send"> <i className="bi bi-send" style={{color: 'white'}}></i> </button>
 
             </form>
 

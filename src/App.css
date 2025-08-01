@@ -1,0 +1,30 @@
+.app-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--variable-color-fondo);
+}
+
+.contacts-container {
+  width: 33%; /* Equivalente a 'w-1/3' en Tailwind */
+  border-right: 1px solid #464c55; /* Equivalente a 'border-r border-gray-300' */
+}
+
+.chat-container {
+  width: 67%; /* Equivalente a 'w-2/3' en Tailwind */
+}
+
+.chat-placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #e5e7eb; /* Equivalente a 'bg-gray-200' */
+  padding: 2rem;
+}
+
+.placeholder-text {
+  color: #6b7280; /* Equivalente a 'text-gray-500' */
+  font-size: 1.125rem; /* Equivalente a 'text-lg' */
+}

@@ -4,14 +4,21 @@
     height: 100%; 
     width: 100%;
     align-items: center; 
-    padding: 0 15px; 
+    /* padding: 0px 15px;  */
     gap: 10px; 
 }
+.content__chat__header-left{
 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+
+}
 /* FIX: Le damos un ancho fijo para que no se encoja. */
 .content__chat__header-img {
-    height: 40px;
-    width: 40px; 
+    height: 48px;
+    width: 48px; 
     border-radius: 50%; /* Cambié a 50% para que siempre sea circular */
     overflow: hidden;
 }
@@ -36,7 +43,8 @@
     gap: 15px;
     align-items: center;
     justify-content: center;
-    margin-left: auto; 
+    margin-left: auto;
+    overflow: hidden; 
 }
 
 .content__chat__header-search,
@@ -46,17 +54,36 @@
     border: none;
     background-color: transparent;
     display: flex;
-    position: relative;
     justify-content: center;
     align-items: center;
     /* cursor: pointer; */
 }
 
-.content__chat__header-search i,
-.content__chat__header-setting i {
-    font-size: 20px;
+.content__chat__header-camera{
+    height: 40px;
+    width: 50px;
+    border: none;
+    background-color: transparent;
     display: flex;
-    position: absolute;
-    right: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    /* cursor: pointer; */
+}
+
+.content__chat__header-camera svg {
+    
+    background-color: transparent;
+    /* height: 24px; */
+}
+.content__chat__header-search i {
+    font-size: 19px;
+    /* height: 24px; */
+
+    color: var(--variable-color-texto); 
+}
+
+.content__chat__header-setting img {
+    height: 24px;
     color: var(--variable-color-texto); 
 }

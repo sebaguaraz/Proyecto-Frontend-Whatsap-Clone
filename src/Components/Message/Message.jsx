@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import "./Message.css"
-import "../../index.css"
+// import "../../index.css"
 
 export const Message = (props) => { 
 
@@ -30,7 +30,7 @@ export const Message = (props) => {
                 {props.hora}
             </span>
 
-            {variable &&  <button className="buttom" onClick={() => props.deleteMessageById(props.id)}> <i class="bi bi-trash"></i> </button> }
+            {variable &&  <button className="buttom" onClick={() => props.deleteMessageById(props.id)}  aria-label="Delete"> <i className="bi bi-trash"></i> </button> }
             
 
         </div>

@@ -18,10 +18,14 @@ const ChatScreen = () => {
 
 // te devuelve un objeto con el parametro de busqueda como propiedad (el valor que viene en la url) 
 // el valor es de TIPO STRING
-const {contact_id} = useParams()
+const {contactId} = useParams()
 
 // Paso 2: buscas el contacto en la lista
-const contact = getContactById(contact_id)
+const contact = getContactById(contactId)
+
+if(!contact){
+  return <h1>El contacto no existe</h1>
+}
 
 
 // Paso 3: pasamos la lista de mensajes del objeto al estado
@@ -99,7 +103,7 @@ const contact = getContactById(contact_id)
 
 
     return (
-      <main>
+      <div>
         <header className="chat__header">
           < ChatHeader contact={contact} />
         </header>
@@ -108,7 +112,7 @@ const contact = getContactById(contact_id)
           {/* hace una condicion, si es verdadero se agarra la segunda condicion, 
           si es falso se agarra el primer valor, pero al ser falso no se muestra en pantalla */}
           {
-            mesages.length > 0 &&  <button type="button" onClick={deleteAllMessage}>Borrar todos los mensajes</button>
+            mesages.length > 0 &&  <button className="chat__screen-delete" type="button" onClick={deleteAllMessage} >Borrar todos los mensajes</button>
           }
             <MessageList message ={mesages} deleteMessageById={deleteMessageById}/>
             <p>
@@ -240,7 +244,7 @@ const contact = getContactById(contact_id)
 
             <SendMessage handlesubmitSendMessageForm={handlesubmitSendMessageForm}/>
         </section>
-      </main>
+      </div>
     )
 };
 

@@ -1,7 +1,7 @@
 import React from "react";
 import { Contact } from "../Contact/Contact";
 import "./ContactList.css"
-import "../../index.css"
+// import "../../index.css"
 
 
 export const ContactList = ({contacts}) => {
