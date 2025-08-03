@@ -1,6 +1,6 @@
 /* Contact.css */
 
-.content__screen__list-contact{
+.aside__screen__list-contact{
     display: flex;
     flex-direction: column;
     border-radius: 12px;
@@ -13,7 +13,7 @@
 }
 
 /* El link es el contenedor flex principal para cada fila de contacto */
-.content__screen__list__link{
+.aside__screen__list-link{
     display: flex;  
     flex-direction: row-reverse;   
     justify-content: space-between;
@@ -27,9 +27,9 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 10px 15px 0px 0px;
+    padding: 10px 0px 0px 0px;
     overflow: hidden;
-    gap: 10px;
+    gap: 15px;
 
 
 }

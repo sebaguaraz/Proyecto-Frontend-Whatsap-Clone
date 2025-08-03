@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router";
+import { Link } from 'react-router';
 // import "../../index.css"
 import "./Contact.css"
 
@@ -17,9 +17,9 @@ export const Contact = ({propiedad}) => {
 
 
     return (
-        <li className="content__screen__list-contact" onMouseOver={onMouseOver} onMouseOut={onMouseOut} style={{backgroundColor: flash}}>
+        <li className="aside__screen__list-contact" onMouseOver={onMouseOver} onMouseOut={onMouseOut} style={{backgroundColor: flash}}>
 
-            <Link  className="content__screen__list__link" to={`/contact/${propiedad.id}/mensajes`}>
+            <Link  className="aside__screen__list-link" to={`/contact/${propiedad.id}/mensajes`}>
                 <div className="contact-info-rigth">
 
                     <h2 className="contact-name contact-name-color">{propiedad.name}</h2>

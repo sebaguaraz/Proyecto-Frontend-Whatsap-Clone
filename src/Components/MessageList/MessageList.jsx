@@ -7,7 +7,7 @@ import "./MessageList.css"
 export const MessageList = (props) => {
 
     if(props.message.length === 0){
-        return <span>No hay mas mensajes</span>
+        return <span className="span-text-list">No hay mensajes en el chat.</span>
     }
     const deleteMessageById = props.deleteMessageById
     const lista = props.message.map((message) => {
@@ -26,7 +26,7 @@ export const MessageList = (props) => {
             
             )
     return (
-        <div className="message-list" >
+        <div className="chat__screen-message-list" >
             {lista}
         </div>
     );

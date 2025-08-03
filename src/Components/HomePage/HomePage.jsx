@@ -17,9 +17,9 @@ export const HomePage = () => {
       };
     return(
 
-        <section className="home__content-container">
+        <section className="home__content">
 
-            <div className="home__content-left">
+            <div className="home__content-container">
 
                 <img  className="home__content-img" src="https://static.whatsapp.net/rsrc.php/v4/y6/r/wa669aeJeom.png" alt="Whatsapp-Image" />
 
@@ -30,15 +30,17 @@ export const HomePage = () => {
 
                 <button  onMouseOver={onMouseOver} onMouseOut={onMouseOut} className="home__content-button" type="button" style={{backgroundColor: changebotton}}>Descargar</button>
 
-            </div>
+                <div className="home__content-privacy">
 
-
-                <div className="home__content-rigth">
-
-                    <i class="bi bi-lock"></i>
+                    <i className="bi bi-lock"></i>
 
                     <span className="span-text">Tus mensajes personales están cifrados de extremo a extremo.</span>
                 </div>
+
+
+            </div>
+
+
 
         </section>
 

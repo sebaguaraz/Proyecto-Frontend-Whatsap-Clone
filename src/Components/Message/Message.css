@@ -2,25 +2,17 @@
 
 
 /* Estilo base para todos los mensajes */
-.message__content {
-    margin: 12px 0PX;
-    font-size: 14px;
-    border-radius: 10px;
-    max-width: 80%;
-    width: 907px;
-    padding: 0px 57px 0px 62px;
-    
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+
 
 /* Estilos específicos para los mensajes enviados por el usuario actual */
 .message__content-mine {
-    background-color: #005c4b; /* Color verde de WhatsApp */
+    word-wrap: break-word;
+    max-width: 60%;
+    min-width: 100px;
+    margin-bottom: 12px;
+    font-size: 14px;
+    background-color: var(--variable-color-mensaje-enviado); /* Color verde de WhatsApp */
     align-self: flex-end; 
-    display: flex;
-    position: relative; 
     padding: 10px 7px 10px 9px;
     border-bottom-right-radius: 15px;
     border-top-left-radius: 15px;
@@ -29,14 +21,18 @@
 
 /* Estilos específicos para los mensajes del receptor */
 .message__content-other {
-    background-color: #202c33; /* Color oscuro para los mensajes del otro */
+    margin-bottom: 12px;
+    font-size: 14px;   
+    background-color: var(--variable-color-mensaje-recibido); /* Color oscuro para los mensajes del otro */
     align-self: flex-start; /* Alinea el mensaje a la izquierda */
-    display: flex;
-    position: relative; 
     padding: 10px 7px 10px 9px;
     border-bottom-right-radius: 15px;
     border-top-right-radius: 15px;
     border-bottom-left-radius: 15px;
+    min-width: 100px;
+    max-width: 60%;
+    word-wrap: break-word;
+
 }
 
 
@@ -46,10 +42,10 @@
 }
 
 .message-info{
+    float: right;
     display: flex;
     flex-direction: row;
     gap: 5px;
-    align-items: center;
     justify-content: center;
     position: relative;
     top: 9px;

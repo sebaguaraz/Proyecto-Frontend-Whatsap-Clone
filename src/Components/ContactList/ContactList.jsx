@@ -12,7 +12,7 @@ export const ContactList = ({contacts}) => {
     })
 
     return (
-        <ul className="content__scree__list">
+        <ul className="aside__screen__list">
             {new_contacts}
         </ul>
     );

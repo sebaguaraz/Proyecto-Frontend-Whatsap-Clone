@@ -13,35 +13,30 @@ export const Message = (props) => {
 
     function onMouseOut(){
         setVariable(false)
-    }       
-    // La forma correcta de aplicar una clase condicional:
-    // Creamos la clase CSS directamente sin usar un estado.
-    // Esto evita el bucle infinito de renderizado.
+    }   
+
     const messageClass = props.emisor === 'Yo' ? 'message__content-mine' : 'message__content-other';
 
     return (
         // Aplicamos la clase calculada directamente al div del mensaje.
-        <div onMouseOver={onMouseOver} onMouseOut={onMouseOut} className="message__content">
 
-            <div className={messageClass}>
+            <div  onMouseOver={onMouseOver} onMouseOut={onMouseOut} className={messageClass} >
 
                 <span className="message-text">
                     {props.texto}
                 </span>
 
                 <div className="message-info">
-                    { props.status === 'visto' ? <span className="message-status"> <img src={check2} alt="check2" /> </span> : <span className="message-status"> <img src={check1} alt="check" /> </span> }
+                    { props.status === 'visto' && messageClass === 'message__content-mine' && <span className="message-status"> <img src={check2} alt="check2" /> </span> }
                     
                     <span className="message-hour">
                         {props.hora}
                     </span>
                 </div>
 
-                {variable && <button className="message-buttom" onClick={() => props.deleteMessageById(props.id)} aria-label="Delete"> <i className="bi bi-trash"></i> </button> }
+                {variable && messageClass === 'message__content-mine' && <button className="message-buttom" onClick={() => props.deleteMessageById(props.id)} aria-label="Delete"> <i className="bi bi-trash"></i> </button> }
             </div>
 
-                
-        </div>
     );
 };
 
