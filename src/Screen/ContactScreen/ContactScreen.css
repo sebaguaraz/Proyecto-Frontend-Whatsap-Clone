@@ -1,17 +1,17 @@
-.aside__screen{
+.aside__screen {
 
-background-color: var(--variable-color-fondo);
-height: 100%;
-width: 100%;
-padding-top: 14px;
+    background-color: var(--variable-color-fondo);
+    height: 100%;
+    width: 100%;
+    padding-top: 14px;
 
-padding-right: 10px;
-padding-left: 10px;
-/* overflow-y: scroll; */
+    padding-right: 10px;
+    padding-left: 10px;
+    /* overflow-y: scroll; */
 }
 
 
-.aside__screen-header{
+.aside__screen-header {
 
     display: flex;
     flex-direction: row;
@@ -21,7 +21,7 @@ padding-left: 10px;
 }
 
 
-.aside__screen-header-contacts{
+.aside__screen-header-contacts {
 
     display: flex;
     flex-direction: row;
@@ -30,12 +30,12 @@ padding-left: 10px;
 
 }
 
-.aside__screen-header-contacts a{
+.aside__screen-header-contacts a {
 
     padding: 8px;
 }
 
-.aside__screen-header-contacts-button{
+.aside__screen-header-contacts-button {
     height: 40px;
     width: 40px;
     border: none;
@@ -47,14 +47,14 @@ padding-left: 10px;
 
 }
 
-.aside__screen-header-contacts-button svg{
+.aside__screen-header-contacts-button svg {
 
-height: 24px;
-color: var(--variable-color-texto);
+    height: 24px;
+    color: var(--variable-color-texto);
 
 }
 
-.aside__screen-header-title{
+.aside__screen-header-title {
 
     font-size: 28px;
     font-family: var(--fuente-principal);

@@ -1,12 +1,12 @@
-.chat__content{
-    height: 100%; 
-    display: flex; 
+.chat__content {
+    height: 100%;
+    display: flex;
     /* position: relative;  */
     flex-direction: column;
-     /* overflow-y:scroll; */
-    }
+    /* overflow-y:scroll; */
+}
 
-.chat__screen{
+.chat__screen {
 
     background: url('https://i.postimg.cc/tJmMYL9H/Whatsapp-Chat-Background.jpg');
     width: 100%;
@@ -15,16 +15,18 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    overflow-y:auto;
-    justify-content: space-between;  
-    scrollbar-width: thin; /* Firefox */
-    scrollbar-color: rgba(255, 255, 255, 0.3) transparent; /* Pulgar y fondo */
-    
+    overflow-y: auto;
+    justify-content: space-between;
+    scrollbar-width: thin;
+    /* Firefox */
+    scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
+    /* Pulgar y fondo */
+
 
 
 }
 
-.chat__screen-delete{
+.chat__screen-delete {
 
     background-color: var(--variable-color-texto);
     border-radius: 20px;
@@ -38,7 +40,7 @@
 
 }
 
-.chat__header{
+.chat__header {
 
     background-color: var(--variable-color-fondo);
     display: flex;

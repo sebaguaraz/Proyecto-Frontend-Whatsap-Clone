@@ -4,10 +4,10 @@ import "./ContactList.css"
 // import "../../index.css"
 
 
-export const ContactList = ({contacts}) => {
+export const ContactList = ({ contacts }) => {
     const new_contacts = contacts.map((elemento) => {
         return (
-            <Contact propiedad={elemento} key={elemento.id}/>
+            <Contact propiedad={elemento} key={elemento.id} />
         )
     })
 

@@ -1,13 +1,14 @@
 .content__chat__header {
     display: flex;
     flex-direction: row;
-    height: 100%; 
+    height: 100%;
     width: 100%;
-    align-items: center; 
+    align-items: center;
     /* padding: 0px 15px;  */
-    gap: 10px; 
+    gap: 10px;
 }
-.content__chat__header-left{
+
+.content__chat__header-left {
 
     display: flex;
     flex-direction: row-reverse;
@@ -16,7 +17,7 @@
 
 }
 
-.content__chat__header-info{
+.content__chat__header-info {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -28,29 +29,29 @@
 /* FIX: Le damos un ancho fijo para que no se encoja. */
 .content__chat__header-img {
     height: 48px;
-    width: 48px; 
-    border-radius: 50%; /* Cambié a 50% para que siempre sea circular */
+    width: 48px;
+    border-radius: 50%;
+    /* Cambié a 50% para que siempre sea circular */
     overflow: hidden;
 }
 
 .contact-avatar {
     width: 100%;
     height: 100%;
-    object-fit: cover;  /* Esto asegura que la imagen cubra el contenedor sin distorsionarse */
+    object-fit: cover;
+    /* Esto asegura que la imagen cubra el contenedor sin distorsionarse */
 }
 
 .content__chat__header-name {
     font-size: 16px;
-    width: auto; 
+    width: auto;
     color: var(--variable-color-texto);
     font-weight: bold;
     flex: 1;
 }
 
-.content__chat__header-arrow i{
+.content__chat__header-arrow i {
     font-size: 24px;
-    /* width: 24px; */
-    /* height: 24px; */
     color: var(--variable-color-texto);
     font-weight: 800;
 
@@ -66,7 +67,8 @@
 }
 
 .content__chat__header-search,
-.content__chat__header-setting, .content__chat__header-arrow {
+.content__chat__header-setting,
+.content__chat__header-arrow {
     height: 40px;
     width: 40px;
     border: none;
@@ -77,12 +79,12 @@
     /* cursor: pointer; */
 }
 
-.content__chat__header-arrow{
+.content__chat__header-arrow {
 
     border-radius: 25px;
 }
 
-.content__chat__header-camera{
+.content__chat__header-camera {
     height: 40px;
     width: 50px;
     border: none;
@@ -95,26 +97,27 @@
 }
 
 .content__chat__header-camera svg {
-    
+
     background-color: transparent;
     /* height: 24px; */
 }
+
 .content__chat__header-search i {
     font-size: 19px;
     /* height: 24px; */
 
-    color: var(--variable-color-texto); 
+    color: var(--variable-color-texto);
 }
 
 .content__chat__header-setting img {
     height: 24px;
-    color: var(--variable-color-texto); 
+    color: var(--variable-color-texto);
 }
 
 
 
 @media screen and (min-width: 742px) {
-  .content__chat__header-arrow {
-    display: none;
-  }
+    .content__chat__header-arrow {
+        display: none;
+    }
 }

@@ -10,25 +10,25 @@ export const HomePage = () => {
 
     const onMouseOver = () => {
         setChangebotton('#197c5dff');
-      };
-    
-      const onMouseOut = () => {
+    };
+
+    const onMouseOut = () => {
         setChangebotton('#21c063');
-      };
-    return(
+    };
+    return (
 
         <section className="home__content">
 
             <div className="home__content-container">
 
-                <img  className="home__content-img" src="https://static.whatsapp.net/rsrc.php/v4/y6/r/wa669aeJeom.png" alt="Whatsapp-Image" />
+                <img className="home__content-img" src="https://static.whatsapp.net/rsrc.php/v4/y6/r/wa669aeJeom.png" alt="Whatsapp-Image" />
 
                 <h1 className="home__content-title">Descarga WhatsApp para Windows</h1>
 
                 <span className="home__content-description">Descarga la aplicación para Windows y haz llamadas, comparte pantalla y disfruta de una experiencia más rápida.</span>
 
 
-                <button  onMouseOver={onMouseOver} onMouseOut={onMouseOut} className="home__content-button" type="button" style={{backgroundColor: changebotton}}>Descargar</button>
+                <button onMouseOver={onMouseOver} onMouseOut={onMouseOut} className="home__content-button" type="button" style={{ backgroundColor: changebotton }}>Descargar</button>
 
                 <div className="home__content-privacy">
 

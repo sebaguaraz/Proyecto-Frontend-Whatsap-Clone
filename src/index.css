@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
+* {
 
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  font-family:  var(--fuente-principal);
+  font-family: var(--fuente-principal);
   color: var(--variable-color-texto);
   /* outline: 1px solid red;  */
 }
 
 
-:root{
+:root {
   /* color de fondo */
   --variable-color-fondo: #161717;
 
@@ -25,7 +25,7 @@
 
   /* span del contacto */
   --variable-color-contact-span: #21c063;
-  
+
   /* color de fondo de msj enviado del chat*/
   --variable-color-mensaje-enviado: #144d37;
 

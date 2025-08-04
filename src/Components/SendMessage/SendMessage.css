@@ -1,4 +1,4 @@
-.content__send__message{
+.content__send__message {
 
     display: flex;
     flex-direction: column;
@@ -11,25 +11,25 @@
 }
 
 
-.content__send__message__form{
-height: 52px;
-width: 100%;
-display: flex;
-align-items: center;
-border: 1px solid rgb(0, 0, 0);
-border-radius: 20px;
-position: relative;
-background-color: #242626;
+.content__send__message__form {
+    height: 52px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    position: relative;
+    background-color: #242626;
 
 
 }
 
-.content__send__message__form label{
+.content__send__message__form label {
 
-display: none;
+    display: none;
 }
 
-.content__send__message__form-input{
+.content__send__message__form-input {
 
     height: 100%;
     width: 100%;
@@ -43,7 +43,7 @@ display: none;
     overflow: hidden;
 }
 
-.content__send__message__form-button{
+.content__send__message__form-button {
     display: flex;
     align-items: center;
     position: relative;
@@ -55,17 +55,17 @@ display: none;
     color: var(--variable-color-texto);
     font-size: 16px;
     padding: 0px 20px;
-    border-radius: 20px;}
-
-
-.content__send__message__form-button i{
-
-display: flex;
-position: absolute;
-right: 15px;
-top: 15px;
-
-font-size: 20px;
-
+    border-radius: 20px;
 }
 
+
+.content__send__message__form-button i {
+
+    display: flex;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+
+    font-size: 20px;
+
+}

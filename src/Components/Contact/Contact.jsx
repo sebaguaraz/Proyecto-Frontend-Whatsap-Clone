@@ -3,29 +3,29 @@ import { Link } from 'react-router';
 // import "../../index.css"
 import "./Contact.css"
 
-export const Contact = ({propiedad}) => {
+export const Contact = ({ propiedad }) => {
 
     const [flash, setFlash] = useState('#161717')
 
     const onMouseOver = () => {
         setFlash('#8088882f')
-    }    
-    
+    }
+
     const onMouseOut = () => {
         setFlash('#161717')
     }
 
 
     return (
-        <li className="aside__screen__list-contact" onMouseOver={onMouseOver} onMouseOut={onMouseOut} style={{backgroundColor: flash}}>
+        <li className="aside__screen__list-contact" onMouseOver={onMouseOver} onMouseOut={onMouseOut} style={{ backgroundColor: flash }}>
 
-            <Link  className="aside__screen__list-link" to={`/contact/${propiedad.id}/mensajes`}>
+            <Link className="aside__screen__list-link" to={`/contact/${propiedad.id}/mensajes`}>
                 <div className="contact-info-rigth">
 
                     <h2 className="contact-name contact-name-color">{propiedad.name}</h2>
                     <span className="contact-last-connection color--modified ">{propiedad.last_connection} </span>
                     {/* <span className="contact-status color ">{propiedad.connection_status}</span> */}
-                    
+
 
 
                 </div>
@@ -33,7 +33,7 @@ export const Contact = ({propiedad}) => {
                 <div className="contact-info-left">
 
                     <div className="content-img-contact">
-                    {/* <span className="contact-description color ">{propiedad.descripcion}</span> */}
+                        {/* <span className="contact-description color ">{propiedad.descripcion}</span> */}
                         <img className="contact-avatar color" src={propiedad.avatar} alt="avatar"></img>
                     </div>
 
