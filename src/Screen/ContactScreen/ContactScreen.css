@@ -53,3 +53,11 @@ height: 24px;
 color: var(--variable-color-texto);
 
 }
+
+.aside__screen-header-title{
+
+    font-size: 28px;
+    font-family: var(--fuente-principal);
+    font-weight: 700;
+    color: var(--variable-color-texto);
+}
